@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class enemyScript : MonoBehaviour
 {
-    float health, maxHealth = 3f;
-
+    float health, maxHealth = 5f;
+    public int damagePlayer = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -18,7 +18,7 @@ public class enemyScript : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("Wall is " + health);
+        Debug.Log("Slime is " + health);
         health -= damage;
         if (health <= 0)
         {
