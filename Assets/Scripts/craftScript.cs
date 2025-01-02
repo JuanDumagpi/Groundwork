@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class craftScript : MonoBehaviour
 {
-    float maxHealth = 5f;
-    float health;
+    public int maxHealth = 5;
+    private int health;
     private SpriteRenderer spriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        health = 1f;
+        health = 1;
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -20,7 +20,7 @@ public class craftScript : MonoBehaviour
 
     }
 
-    public void craftFix(float repair)
+    public void craftFix(int repair)
     {
         if (health < maxHealth)
         {
@@ -39,5 +39,15 @@ public class craftScript : MonoBehaviour
         spriteRenderer.color = Color.green;
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = Color.white;
+    }
+
+    public void craftDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("wall takes damage");
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

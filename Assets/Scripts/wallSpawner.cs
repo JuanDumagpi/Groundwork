@@ -21,6 +21,6 @@ public class wallSpawner : MonoBehaviour
 
     void makeWall()
     {   //instantiates a wall block that can be used as a platform or block enemies
-        Instantiate(wallObject, spawnPoint.position, spawnPoint.rotation);
+        GameObject cloneWall = Instantiate(wallObject, spawnPoint.position, spawnPoint.rotation);
     }
 }

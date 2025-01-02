@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class meleeAttack : MonoBehaviour
 {
-    public float damage = 1;
-    public float repair = 1;
+    public int damage = 1;
+    public int repair = 1;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -18,7 +18,7 @@ public class meleeAttack : MonoBehaviour
         if (craft != null)
         {
             Debug.Log("Hits");
-            craft.craftFix(repair);
+            craft.craftFix(damage);
         }
     }
 

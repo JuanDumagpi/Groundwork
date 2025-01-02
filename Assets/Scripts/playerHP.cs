@@ -17,21 +17,22 @@ public class playerHP : MonoBehaviour
     }
 
     //when getting hit by an enemy class object, run the takeDamage function
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        enemyScript enemy = collision.GetComponent<enemyScript>();
-        if (enemy) 
-        {
-            TakeDamage(enemy.damagePlayer);
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    enemyScript enemy = collision.GetComponent<enemyScript>();
+    //    if (enemy) 
+    //    {
+    //        playerDamaged(enemy.damagePlayer);
+    //    }
+    //}
 
     //updates hearts in the UI when taking damage, shows Game Over if you run out
-        private void TakeDamage(int damagePlayer)
+        public void playerDamaged(int damage)
     {
-        currentHealth -= damagePlayer;
+        currentHealth -= damage;
         healthUI.UpdateHearts(currentHealth);
         StartCoroutine(hitFlash());
+        Debug.Log("player takes damage");
         if(currentHealth <= 0)
         {
             //Game Over!
