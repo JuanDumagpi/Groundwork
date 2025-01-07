@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7798776937081366643}
   - component: {fileID: 8327045684098838492}
   - component: {fileID: 5227524713097620582}
-  m_Layer: 0
+  - component: {fileID: -3396195479466372349}
+  m_Layer: 8
   m_Name: Turret
-  m_TagString: Untagged
+  m_TagString: Craft
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,6 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1234430959636112464}
+  - {fileID: 5443782322363864254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3287473830070500100
@@ -177,13 +179,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimPoint: {fileID: 1234430959636112464}
+  endPoint: {fileID: 5443782322363864254}
   attackSpeed: 0
   maxAttackSpeed: 3
   bullet: {fileID: 7590646129336008584, guid: 28906089b0a20fb49acdc10ed4675a99, type: 3}
-  turretRange: 12
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &-3396195479466372349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3459003201123542959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abf8d18f3a305a47a14810b8e831149, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 3
+  health: 0
+  iFrameDuration: 0.5
 --- !u!1 &4187670966414031258
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1234430959636112464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: aimPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,6 +227,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.0729, y: 0.0852, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6119314084897869327}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7826122312650202677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5443782322363864254}
+  m_Layer: 8
+  m_Name: endPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5443782322363864254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7826122312650202677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.712, y: 0.0852, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

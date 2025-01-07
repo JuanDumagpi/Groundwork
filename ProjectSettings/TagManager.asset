@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Craft
   - Enemy
+  - Copper
+  - Silver
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - UI
   - EnemyLayer
   - Player
-  - 
+  - CraftLayer
   - 
   - 
   - 

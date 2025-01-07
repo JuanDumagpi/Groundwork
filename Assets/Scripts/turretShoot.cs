@@ -1,12 +1,14 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class turretShoot : MonoBehaviour
 {
     public Transform aimPoint; //reference to the Turret's aimPoint
+    public Transform endPoint; //reference to the Turret's endPoint
     public float attackSpeed;
     public float maxAttackSpeed;
     public GameObject bullet; //reference to the Turret's projectile
-    public float turretRange; //reference to how far the turret can see before it shoots
+    private int lineDist;
     public LayerMask enemyLayer;
 
 
@@ -31,7 +33,8 @@ public class turretShoot : MonoBehaviour
 
     public void Shoot()
     {
-        RaycastHit2D hit = Physics2D.Raycast(aimPoint.position, Vector2.right, turretRange, enemyLayer);
+        RaycastHit2D hit = Physics2D.Linecast(aimPoint.position, endPoint.position, enemyLayer);
+        Debug.DrawLine(aimPoint.position, endPoint.position);
         if (hit.collider != null)
         {
         Debug.Log("enemy found!");

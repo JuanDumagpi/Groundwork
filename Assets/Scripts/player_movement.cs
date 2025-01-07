@@ -1,11 +1,13 @@
+using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class player_movement : MonoBehaviour
 {
     //For flipping sprite
     private float horizontal;
-    private bool isRight = true;
+    public bool isRight = true;
 
     //Speed of movement
     public float speed;
@@ -28,7 +30,12 @@ public class player_movement : MonoBehaviour
     public float KBTime;
     public float KBTotalTime;
     public bool KBFromRight;
-    
+
+    //This is for collecting items
+    public Items item;
+    public float itemCD = 0.5f;
+    public bool collectable = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -103,4 +110,35 @@ public class player_movement : MonoBehaviour
         animator.SetBool("isJumping", !isGrounded);
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Copper"))
+        {
+            if (collectable == true)
+            {
+                Destroy(other.gameObject);
+                item.copperCount++;
+                StartCoroutine(itemCooldown());
+            }
+        }
+
+        if (other.gameObject.CompareTag("Silver"))
+        {
+            if (collectable == true)
+            {
+                Destroy(other.gameObject);
+                item.silverCount++;
+                StartCoroutine(itemCooldown());
+            }
+        }
+        
+    }
+
+
+    IEnumerator itemCooldown()
+    {
+        collectable = false;
+        yield return new WaitForSeconds(itemCD);
+        collectable = true;
+    }
 }

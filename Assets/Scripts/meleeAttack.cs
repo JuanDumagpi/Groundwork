@@ -4,6 +4,7 @@ public class meleeAttack : MonoBehaviour
 {
     public int damage = 1;
     public int repair = 1;
+    public player_movement player;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -19,6 +20,21 @@ public class meleeAttack : MonoBehaviour
         {
             Debug.Log("Hits");
             craft.craftFix(damage);
+        }
+
+        craftUpgrade upgrade = collision.GetComponent<craftUpgrade>();
+        if (upgrade != null)
+        {
+
+            Debug.Log("Upgrades?");
+            if (player.isRight==true)
+            {
+                upgrade.upgradeWallRight();
+            }
+            else
+            {
+                upgrade.upgradeWallLeft();
+            }
         }
     }
 

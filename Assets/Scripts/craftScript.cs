@@ -1,12 +1,15 @@
 using System;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class craftScript : MonoBehaviour
 {
-    public int maxHealth = 5;
-    private int health;
+    public int maxHealth;
+    public int health;
     private SpriteRenderer spriteRenderer;
+    public float iFrameDuration;
+    private bool invuln = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,16 +25,17 @@ public class craftScript : MonoBehaviour
 
     public void craftFix(int repair)
     {
-        if (health < maxHealth)
+        if (health < maxHealth && invuln == false)
         {
             health += repair;
             Debug.Log("Wall health is" + health);
         }
         else
         {
-            Debug.Log("Wall health is max!");
-            StartCoroutine(repairComplete());
+            Debug.Log("Wall health is didnt change!");
+
         }
+        StartCoroutine(IFrame());
     }
 
     private IEnumerator repairComplete()
@@ -49,6 +53,13 @@ public class craftScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator IFrame()
+    {
+        invuln = true;
+        yield return new WaitForSeconds(iFrameDuration);
+        invuln = false;
     }
 
 }
