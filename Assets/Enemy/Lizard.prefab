@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8834053938589399013}
   - component: {fileID: 4580534934783602535}
-  - component: {fileID: 5343438560190811344}
   m_Layer: 6
   m_Name: Lizard
   m_TagString: Enemy
@@ -90,23 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5343438560190811344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970188944601627688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3feaf4f4a6632743a9b1547af641f1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 1
-  damage: 1
-  playerMovement: {fileID: 0}
-  enemyPatrol: {fileID: 0}
 --- !u!1 &4699343542549345286
 GameObject:
   m_ObjectHideFlags: 0
@@ -116,7 +98,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 148684012808297702}
-  - component: {fileID: 4881874273581030849}
+  - component: {fileID: 4599246741012975799}
+  - component: {fileID: 3485146084520846361}
   m_Layer: 0
   m_Name: sightCone
   m_TagString: Untagged
@@ -139,8 +122,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8834053938589399013}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &4881874273581030849
-PolygonCollider2D:
+--- !u!61 &4599246741012975799
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -169,11 +152,11 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 1.6449165, y: -1.644917}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -183,17 +166,21 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.47449493, y: 0.56296873}
-      - {x: -4.3746986, y: 0.5387943}
-      - {x: -4.3699675, y: -0.49775946}
-      - {x: -4.334711, y: -2.5197713}
-      - {x: -4.3403225, y: -3.2999046}
-      - {x: -0.47122574, y: -3.2906125}
-      - {x: 0.49198532, y: -3.2798917}
-      - {x: 7.986514, y: -2.1170037}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 12.131355, y: 4.289834}
+  m_EdgeRadius: 0
+--- !u!114 &3485146084520846361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4699343542549345286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cefef4b7bd676f49b47300d3caf9232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerFound: 0
 --- !u!1 &6050797854514654265
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,3 +230,4 @@ MonoBehaviour:
   attackSpeed: 6
   aimPoint: {fileID: 1957233519260552965}
   playerOffsetY: 1.25
+  sight: {fileID: 3485146084520846361}

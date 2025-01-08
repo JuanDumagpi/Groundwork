@@ -61,6 +61,7 @@
     <Analyzer Include="G:\Unity Hub\editor\6000.0.32f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\sightBox.cs" />
     <Compile Include="Assets\Scripts\player_movement.cs" />
     <Compile Include="Assets\Scripts\craftScript.cs" />
     <Compile Include="Assets\Scripts\turretShoot.cs" />

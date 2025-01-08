@@ -12,7 +12,7 @@ public class lizardScript : MonoBehaviour
     float maxAttackSpeed = 6f;
     public Transform aimPoint;
     public float playerOffsetY;
-
+    public sightBox sight;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,10 @@ public class lizardScript : MonoBehaviour
 
         if (attackSpeed <= 0)
         {
+            if(sight.playerFound == true)
+            {
             lizFire();
+            }
             attackSpeed = maxAttackSpeed;
         }
         else
