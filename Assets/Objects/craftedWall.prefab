@@ -227,6 +227,8 @@ MonoBehaviour:
   maxHealth: 5
   health: 0
   iFrameDuration: 0.5
+  spawnPoint: {fileID: 2246794600834477652}
+  copper: {fileID: 8439687049944152598, guid: 1a0a7862bfc9db14a80b15de67770452, type: 3}
 --- !u!114 &6546994396521583784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,7 +245,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 2246794600834477652}
   turret: {fileID: 3459003201123542959, guid: 05bec251ae0d50d4ea7e9cf2ec261a31, type: 3}
   invuln: 0
-  iFrameDuration: 0.5
+  iFrameDuration: 0.25
 --- !u!1 &8450696188171386884
 GameObject:
   m_ObjectHideFlags: 0

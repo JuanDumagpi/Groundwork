@@ -181,11 +181,14 @@ MonoBehaviour:
   aimPoint: {fileID: 1234430959636112464}
   endPoint: {fileID: 5443782322363864254}
   attackSpeed: 0
-  maxAttackSpeed: 3
+  maxAttackSpeed: 1.5
   bullet: {fileID: 7590646129336008584, guid: 28906089b0a20fb49acdc10ed4675a99, type: 3}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
+  ammo: 15
+  lifespan: 30
+  silver: {fileID: 9109293656888475477, guid: 0867930d01bcd3742b7b68eae90fd7dd, type: 3}
 --- !u!114 &-3396195479466372349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +203,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   health: 0
-  iFrameDuration: 0.5
+  iFrameDuration: 0.25
+  spawnPoint: {fileID: 1234430959636112464}
+  copper: {fileID: 9109293656888475477, guid: 0867930d01bcd3742b7b68eae90fd7dd, type: 3}
 --- !u!1 &4187670966414031258
 GameObject:
   m_ObjectHideFlags: 0

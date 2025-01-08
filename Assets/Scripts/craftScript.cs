@@ -10,6 +10,9 @@ public class craftScript : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     public float iFrameDuration;
     private bool invuln = false;
+    public Transform spawnPoint;
+    public GameObject copper; // when the crafted object is destroyed you get a refun of resources!
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,11 +31,11 @@ public class craftScript : MonoBehaviour
         if (health < maxHealth && invuln == false)
         {
             health += repair;
-            Debug.Log("Wall health is" + health);
+            Debug.Log("Object health is" + health);
         }
         else
         {
-            Debug.Log("Wall health is didnt change!");
+            Debug.Log("Object health didnt change!");
 
         }
         StartCoroutine(IFrame());
@@ -51,6 +54,7 @@ public class craftScript : MonoBehaviour
         Debug.Log("wall takes damage");
         if (health <= 0)
         {
+            GameObject scrap = Instantiate(copper, spawnPoint.position, spawnPoint.rotation);
             Destroy(gameObject);
         }
     }

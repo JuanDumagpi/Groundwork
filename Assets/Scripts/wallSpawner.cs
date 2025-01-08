@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class wallSpawner : MonoBehaviour
 {
-    public GameObject wallObject;
-    public Transform spawnPoint;
+    public GameObject wallObject; //refers to the prefab
+    public Transform spawnPoint; //refers to where the item will spawn, childed to the player
+    Items resources; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        resources = FindFirstObjectByType<Items>(); //refers to the item script
+
     }
 
     // Update is called once per frame
@@ -15,7 +17,15 @@ public class wallSpawner : MonoBehaviour
     {   //calls the makeWall function when right click is pressed
         if (Input.GetButtonDown("Fire2"))
         {
-            makeWall();
+            if (resources.copperCount >= 1)
+            {
+                makeWall();
+                resources.copperCount--;
+            }
+            else
+            {
+                Debug.Log("Not enough copper to make a wall!");
+            }
         }
     }
 

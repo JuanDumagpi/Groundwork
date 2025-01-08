@@ -10,8 +10,9 @@ public class turretShoot : MonoBehaviour
     public GameObject bullet; //reference to the Turret's projectile
     private int lineDist;
     public LayerMask enemyLayer;
-
-
+    public int ammo = 15; //destroys gameobject if it runs out of ammo
+    public float lifespan = 30; //destroys the game object if inactive for 30s
+    public GameObject silver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -29,6 +30,12 @@ public class turretShoot : MonoBehaviour
         }
         attackSpeed -= Time.deltaTime;
         
+        if (lifespan <= 0 || ammo <= 0)
+        {
+            GameObject scrap = Instantiate(silver, aimPoint.position, aimPoint.rotation);
+            Destroy(gameObject);
+        }
+        lifespan -= Time.deltaTime;
     }
 
     public void Shoot()
@@ -37,8 +44,10 @@ public class turretShoot : MonoBehaviour
         Debug.DrawLine(aimPoint.position, endPoint.position);
         if (hit.collider != null)
         {
-        Debug.Log("enemy found!");
-        Instantiate(bullet, aimPoint.position, aimPoint.rotation);
+            Debug.Log("enemy found!");
+            Instantiate(bullet, aimPoint.position, aimPoint.rotation);
+            lifespan = 30;
+            ammo--;
         }
     }
 

@@ -24,7 +24,6 @@ public class enemyScript : MonoBehaviour
     //makes the enemy be able to take damage from player
     public void TakeDamage(int damage)
     {
-        Debug.Log("Slime is " + health);
         health -= damage;
         if (health <= 0)
         {

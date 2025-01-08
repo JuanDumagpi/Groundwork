@@ -11,22 +11,26 @@ public class meleeAttack : MonoBehaviour
         enemyScript enemy = collision.GetComponent<enemyScript>();
         if (enemy != null)
         {
-            Debug.Log("Hits");
+
             enemy.TakeDamage(damage);
+        }
+
+        breakScript breakables = collision.GetComponent<breakScript>();
+        if (breakables != null)
+        {
+            breakables.TakeDamage(damage);
         }
 
         craftScript craft = collision.GetComponent<craftScript>();
         if (craft != null)
         {
-            Debug.Log("Hits");
+
             craft.craftFix(damage);
         }
 
         craftUpgrade upgrade = collision.GetComponent<craftUpgrade>();
         if (upgrade != null)
         {
-
-            Debug.Log("Upgrades?");
             if (player.isRight==true)
             {
                 upgrade.upgradeWallRight();
