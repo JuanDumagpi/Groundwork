@@ -38,7 +38,7 @@ public class EnemyPatrol : MonoBehaviour
     {   //draws an imaginary line from the ledgedetector empty object downwards, to check if there is a no ground layer below
         RaycastHit2D hit = Physics2D.Raycast(ledgeDetect.position, Vector2.down, raycast, groundLayer);
         RaycastHit2D hitTile = Physics2D.Raycast(ledgeDetect.position, Vector2.left, raycast2, groundLayer);
-        if (hit.collider == null || hitTile.collider == true)
+        if (hit.collider == null || hitTile.collider != null)
         {
             changeDirection();
         }

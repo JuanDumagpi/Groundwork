@@ -1,18 +1,26 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class playerHP : MonoBehaviour
 {
-    public int maxHP = 3;
-    private int currentHealth;
+    public int maxHP = 4;
+    public int currentHealth;
     private SpriteRenderer spriteRenderer;
     public healthUI healthUI;
+    internal static object currenthealth;
+    public player_movement player;
+
+    //for game over
+    public int lives = 3;
+    public static event Action OnPlayerDied;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentHealth = maxHP;
         healthUI.SetMaxHearts(maxHP);
-
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -33,9 +41,19 @@ public class playerHP : MonoBehaviour
         healthUI.UpdateHearts(currentHealth);
         StartCoroutine(hitFlash());
         Debug.Log("player takes damage");
-        if(currentHealth <= 0)
+        if(currentHealth == 0)
         {
-            //Game Over!
+            
+            if(lives <= 0)
+            {
+                OnPlayerDied.Invoke();
+            }
+            else
+            {
+                player.Death();
+                healthUI.UpdateHearts(currentHealth);
+                lives--;
+            }
         }
     }
 

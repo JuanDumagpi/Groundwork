@@ -8,6 +8,13 @@ public class meleeAttack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
+        rangedEnemyScript renemy = collision.GetComponent<rangedEnemyScript>();
+        if (renemy != null)
+        {
+
+            renemy.TakeDamage(damage);
+        }
+
         enemyScript enemy = collision.GetComponent<enemyScript>();
         if (enemy != null)
         {
@@ -19,6 +26,12 @@ public class meleeAttack : MonoBehaviour
         if (breakables != null)
         {
             breakables.TakeDamage(damage);
+        }
+
+        copperScript rocks = collision.GetComponent<copperScript>();
+        if (rocks != null)
+        {
+            rocks.TakeDamage(damage);
         }
 
         craftScript craft = collision.GetComponent<craftScript>();

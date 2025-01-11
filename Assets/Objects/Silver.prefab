@@ -22,23 +22,23 @@ PrefabInstance:
       objectReference: {fileID: -6921023440832218305, guid: b4c57014d7453ff4ab2ecb2eb2e3b940, type: 3}
     - target: {fileID: 7878350319992209165, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.9287
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.9287
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.9287
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -98.536
+      value: -98.543
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.201426
+      value: 2.0306
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -83,6 +83,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3188052866988653481}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -6467738034551869284}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2568888941826368762}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4352862069751358360}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
 --- !u!1 &9109293656888475477 stripped
 GameObject:
@@ -125,3 +134,79 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.000000029802322, y: 0.390625}
   m_Radius: 0.34375
+--- !u!58 &-6467738034551869284
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109293656888475477}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 5ad49da8137ef014b9356f61adc90149, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.000000029802322, y: 0.390625}
+  m_Radius: 0.34375
+--- !u!114 &2568888941826368762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109293656888475477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71bb022fba0614441836efbde413865b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 6
+--- !u!50 &4352862069751358360
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9109293656888475477}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 6200000, guid: 5ad49da8137ef014b9356f61adc90149, type: 2}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

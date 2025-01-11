@@ -31,27 +31,15 @@ public class craftScript : MonoBehaviour
         if (health < maxHealth && invuln == false)
         {
             health += repair;
-            Debug.Log("Object health is" + health);
-        }
-        else
-        {
-            Debug.Log("Object health didnt change!");
-
+            
         }
         StartCoroutine(IFrame());
-    }
-
-    private IEnumerator repairComplete()
-    {
-        spriteRenderer.color = Color.green;
-        yield return new WaitForSeconds(0.2f);
-        spriteRenderer.color = Color.white;
     }
 
     public void craftDamage(int damage)
     {
         health -= damage;
-        Debug.Log("wall takes damage");
+        StartCoroutine(hitFlash());
         if (health <= 0)
         {
             GameObject scrap = Instantiate(copper, spawnPoint.position, spawnPoint.rotation);
@@ -62,8 +50,24 @@ public class craftScript : MonoBehaviour
     IEnumerator IFrame()
     {
         invuln = true;
+
+        if (health < maxHealth)
+        {
+            spriteRenderer.color = Color.green;
+        }
+        else
+        {
+            spriteRenderer.color = Color.cyan;
+        }
         yield return new WaitForSeconds(iFrameDuration);
+        spriteRenderer.color = Color.white;
         invuln = false;
     }
 
+    private IEnumerator hitFlash()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = Color.white;
+    }
 }

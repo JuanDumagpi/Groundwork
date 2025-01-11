@@ -13,7 +13,7 @@ public class lizardScript : MonoBehaviour
     public Transform aimPoint;
     public float playerOffsetY;
     public sightBox sight;
-
+    public rangedEnemyScript enemy;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,7 @@ public class lizardScript : MonoBehaviour
         {
             if(sight.playerFound == true)
             {
-            lizFire();
+                StartCoroutine(enemy.attackAnim());
             }
             attackSpeed = maxAttackSpeed;
         }
@@ -42,7 +42,7 @@ public class lizardScript : MonoBehaviour
     }
 
     //fires the fireball
-    void lizFire()
+    public void lizFire()
     {
         GameObject fireBall = Instantiate(bullet, aimPoint.position, transform.rotation);
     }

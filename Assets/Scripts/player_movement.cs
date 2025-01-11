@@ -36,10 +36,16 @@ public class player_movement : MonoBehaviour
     public float itemCD = 0.5f;
     public bool collectable = true;
 
+    //Respawn Checkpoint
+    public Vector2 checkPoint;
+    playerHP health;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
+        health = GetComponent<playerHP>();
+        setRespawnPoint((Vector2)transform.position);
     }
 
 
@@ -92,6 +98,27 @@ public class player_movement : MonoBehaviour
         animator.SetFloat("yVelocity", rb.linearVelocity.y);
     }
 
+    //Changes where the respawn point is
+    public void setRespawnPoint(Vector2 position)
+    {
+        checkPoint = position;
+    }
+
+    public void Death()
+    {
+        deactivateColliders();
+        StartCoroutine(Respawn());
+        health.currentHealth = health.maxHP;
+    }
+
+    //Respawns the character to the checkpoint
+    public IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(0.5f);
+        transform.position = (Vector3)checkPoint;
+        activateColliders();
+    }
+
     //flips the sprite when turning
     private void flip()
     {   
@@ -108,6 +135,22 @@ public class player_movement : MonoBehaviour
     {   //checks if on the ground, and cancels jumping animation
         isGrounded = true;
         animator.SetBool("isJumping", !isGrounded);
+    }
+
+    public void deactivateColliders ()
+    {
+        foreach(Collider2D c in GetComponents<Collider2D>())
+        {
+            c.enabled = false;
+        }
+    }
+
+    public void activateColliders()
+    {
+        foreach (Collider2D c in GetComponents<Collider2D>())
+        {
+            c.enabled = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
