@@ -13,6 +13,10 @@ PrefabInstance:
       value: Copper
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 0af4cae4190e34e46ad869db811c1cb6, type: 3}
       propertyPath: m_TagString
       value: Copper
       objectReference: {fileID: 0}

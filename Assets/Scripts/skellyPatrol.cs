@@ -1,5 +1,5 @@
 using UnityEngine;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
+
 
 public class skellyPatrol : MonoBehaviour
 {
@@ -25,7 +25,8 @@ public class skellyPatrol : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Physics2D.IgnoreLayerCollision(6, 6);
+        Physics2D.IgnoreLayerCollision(6, 6, true);
+        Physics2D.IgnoreLayerCollision(10, 10, true);
     }
 
     private void changeDirection()

@@ -1,4 +1,4 @@
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 
 public class skellyScript : MonoBehaviour
@@ -80,5 +80,19 @@ public class skellyScript : MonoBehaviour
                 drill.craftDamage(damage);
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Copper"))
+        {
+                Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Silver"))
+        {
+                Destroy(other.gameObject);
+        }
+
     }
 }

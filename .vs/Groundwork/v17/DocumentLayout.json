@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "G:\\Games\\Projects\\Groundwork\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|g:\\games\\projects\\groundwork\\assets\\scripts\\enemypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\turretshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turretshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\skellyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skellyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\skellypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skellypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player_movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\itempop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itempop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|g:\\games\\projects\\groundwork\\assets\\scripts\\enemypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemypatrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\drillscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\nextlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\nextlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\skellyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\skellyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\craftscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\turretshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turretshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\items.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,10 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fireball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\skellyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,10 +103,6 @@
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\copperscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\itempop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\itempop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|G:\\Games\\Projects\\Groundwork\\assets\\scripts\\healthui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCCB00F3-E0B0-CEC5-4EB1-920793BFA93A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -122,11 +122,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 24,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "drillScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\drillScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\drillScript.cs",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "nextLevel.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\nextLevel.cs",
               "RelativeDocumentMoniker": "Assets\\nextLevel.cs",
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Items.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Items.cs",
               "RelativeDocumentMoniker": "Assets\\Items.cs",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "craftScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\craftScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\craftScript.cs",
@@ -174,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "meleeAttack.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\meleeAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\meleeAttack.cs",
@@ -186,19 +186,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "skellyScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\skellyScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\skellyScript.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\skellyScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\skellyScript.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwEEAAAAhAAAA",
+              "ViewState": "AQIAACYAAAAAAAAAAAAIwAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T02:42:25.783Z"
+              "WhenOpened": "2025-01-11T02:42:25.783Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "skellySpawner.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\skellySpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\skellySpawner.cs",
@@ -210,15 +211,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "skellyPatrol.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\skellyPatrol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\skellyPatrol.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\skellyPatrol.cs",
               "RelativeToolTip": "Assets\\Scripts\\skellyPatrol.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwBgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T02:54:17.441Z"
+              "WhenOpened": "2025-01-11T02:54:17.441Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -228,25 +230,27 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\player_movement.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\player_movement.cs",
               "RelativeToolTip": "Assets\\Scripts\\player_movement.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAKAAAAAAAAAAAAAAAKEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T15:41:11.201Z"
+              "WhenOpened": "2025-01-02T15:41:11.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "enemyScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\enemyScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\enemyScript.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\enemyScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\enemyScript.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBkAAAAFAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwAgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T23:09:42.579Z"
+              "WhenOpened": "2024-12-30T23:09:42.579Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "CameraControl.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\CameraControl.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraControl.cs",
@@ -258,19 +262,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 4,
               "Title": "itemPop.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\itemPop.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\itemPop.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\itemPop.cs",
               "RelativeToolTip": "Assets\\Scripts\\itemPop.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T20:59:11.264Z"
+              "WhenOpened": "2025-01-10T20:59:11.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "copperScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\copperScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\copperScript.cs",
@@ -282,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "restartScene.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\restartScene.cs",
               "RelativeDocumentMoniker": "Assets\\restartScene.cs",
@@ -306,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "playerHP.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\playerHP.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerHP.cs",
@@ -318,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PlayerAttack.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\PlayerAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerAttack.cs",
@@ -342,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "lizardScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\lizardScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\lizardScript.cs",
@@ -354,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "sightBox.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\sightBox.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\sightBox.cs",
@@ -366,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "fireBall.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\fireBall.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\fireBall.cs",
@@ -378,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "breakScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\breakScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\breakScript.cs",
@@ -390,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "craftUpgrade.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\craftUpgrade.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\craftUpgrade.cs",
@@ -402,7 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "bulletScript.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\bulletScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\bulletScript.cs",
@@ -414,25 +419,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "turretShoot.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\turretShoot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\turretShoot.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\turretShoot.cs",
               "RelativeToolTip": "Assets\\Scripts\\turretShoot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAhAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T01:16:43.851Z"
+              "WhenOpened": "2025-01-05T01:16:43.851Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "EnemyPatrol.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\EnemyPatrol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyPatrol.cs",
               "ToolTip": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\EnemyPatrol.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyPatrol.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T18:36:33.628Z",
               "EditorCaption": ""
@@ -451,7 +457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "wallSpawner.cs",
               "DocumentMoniker": "G:\\Games\\Projects\\Groundwork\\Assets\\Scripts\\wallSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\wallSpawner.cs",

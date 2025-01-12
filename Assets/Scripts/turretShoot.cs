@@ -1,4 +1,4 @@
-using UnityEditor.Experimental.GraphView;
+
 using UnityEngine;
 
 public class turretShoot : MonoBehaviour
@@ -10,8 +10,8 @@ public class turretShoot : MonoBehaviour
     public GameObject bullet; //reference to the Turret's projectile
     private int lineDist;
     public LayerMask enemyLayer;
-    public int ammo = 15; //destroys gameobject if it runs out of ammo
-    public float lifespan = 30; //destroys the game object if inactive for 30s
+    public int ammo = 30; //destroys gameobject if it runs out of ammo
+    public float lifespan = 60; //destroys the game object if inactive for 60s
     public GameObject silver;
 
     public AudioSource shot;
@@ -50,7 +50,7 @@ public class turretShoot : MonoBehaviour
             shot.Play();
             Debug.Log("enemy found!");
             Instantiate(bullet, aimPoint.position, aimPoint.rotation);
-            lifespan = 30;
+            lifespan = 60;
             ammo--;
         }
     }

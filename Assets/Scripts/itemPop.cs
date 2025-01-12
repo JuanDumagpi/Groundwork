@@ -11,6 +11,7 @@ public class itemPop : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.AddForce(Vector2.up * force, ForceMode2D.Impulse);
+        Physics2D.IgnoreLayerCollision(6, 6, true);
     }
 
     // Update is called once per frame
