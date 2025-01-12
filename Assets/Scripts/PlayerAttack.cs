@@ -6,6 +6,7 @@ public class PlayerAttack : MonoBehaviour
     bool isAttacking = false;
     float atkSpeed = 0.3f;
     float atkTime = 0;
+    public AudioSource hitAudio;
 
     //This is for animation
     Animator animator;
@@ -24,6 +25,8 @@ public class PlayerAttack : MonoBehaviour
         //Makes the player attack when pressing left click
         if (Input.GetButtonDown("Fire1"))
         {
+            hitAudio.pitch = UnityEngine.Random.Range(0.6f, .9f);
+            hitAudio.Play();
             onAttack();
             animator.SetTrigger("attack");
         }

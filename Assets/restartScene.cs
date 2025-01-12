@@ -21,4 +21,9 @@ public class restartScene : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
     }
+
+    public void NewGame()
+    {
+        Application.Quit();
+    }
 }

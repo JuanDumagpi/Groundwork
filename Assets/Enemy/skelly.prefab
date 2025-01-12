@@ -43,8 +43,9 @@ GameObject:
   - component: {fileID: 3348020489728907670}
   - component: {fileID: 3927372644154838431}
   - component: {fileID: 4310732719865018869}
-  - component: {fileID: 2001664222295000161}
   - component: {fileID: -1990062916660890089}
+  - component: {fileID: 7829156848466017258}
+  - component: {fileID: 3632859841523279533}
   m_Layer: 6
   m_Name: skelly
   m_TagString: Untagged
@@ -187,30 +188,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.025660515, y: -0.0849967}
   m_Size: {x: 0.50605583, y: 0.8300066}
   m_Direction: 0
---- !u!114 &2001664222295000161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7327695038770257973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6acec4414f03bcd49a3e86546c57cb6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 3927372644154838431}
-  speed: 1
-  ledgeDetect: {fileID: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  raycast: 0
-  raycast2: 2
-  KBStrength: 1
-  KBTime: 0
-  KBTotalTime: 0.2
-  KBFromRight: 0
 --- !u!95 &-1990062916660890089
 Animator:
   serializedVersion: 7
@@ -233,3 +210,42 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7829156848466017258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327695038770257973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5cd29922e15c446b83a0d9572ea8f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 2
+  damage: 2
+  enemyPatrol: {fileID: 3632859841523279533}
+--- !u!114 &3632859841523279533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7327695038770257973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6f2fc5afdbfe58408b2770ed0d7649e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3927372644154838431}
+  speed: 1
+  ledgeDetect: {fileID: 8702830332173753806}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  raycast2: 1
+  KBStrength: 5
+  KBTime: 0
+  KBTotalTime: 0.2
+  KBFromRight: 0

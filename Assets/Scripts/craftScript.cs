@@ -12,6 +12,7 @@ public class craftScript : MonoBehaviour
     private bool invuln = false;
     public Transform spawnPoint;
     public GameObject copper; // when the crafted object is destroyed you get a refun of resources!
+    public AudioSource thunkAudio;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +39,8 @@ public class craftScript : MonoBehaviour
 
     public void craftDamage(int damage)
     {
+        thunkAudio.pitch = UnityEngine.Random.Range(0.9f, 1.2f);
+        thunkAudio.Play();
         health -= damage;
         StartCoroutine(hitFlash());
         if (health <= 0)

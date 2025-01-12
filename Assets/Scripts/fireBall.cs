@@ -5,10 +5,13 @@ public class fireBall : MonoBehaviour
     public float speed = 4f;
     private float bulletEraser = 3;
     public int damage = 1;
+    public AudioSource woosh;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        woosh.pitch = UnityEngine.Random.Range(1f, 2f);
+        woosh.Play();
     }
 
     // Update is called once per frame
@@ -24,7 +27,6 @@ public class fireBall : MonoBehaviour
         playerHP player = collision.GetComponent<playerHP>();
         if (player != null)
         {
-            Debug.Log("Hits");
             player.playerDamaged(damage);
             Destroy(gameObject);
         }
@@ -32,10 +34,17 @@ public class fireBall : MonoBehaviour
         craftScript craft = collision.GetComponent<craftScript>();
         if (craft != null)
         {
-            Debug.Log("Hits");
             craft.craftDamage(damage);
             Destroy(gameObject);
         }
+
+        breakScript breaks = collision.GetComponent<breakScript>();
+        if (breaks != null)
+        {
+            breaks.TakeDamage(damage);
+            Destroy(gameObject);
+        }
+
     }
 
     private void FixedUpdate()

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class playerHP : MonoBehaviour
@@ -11,10 +12,8 @@ public class playerHP : MonoBehaviour
     internal static object currenthealth;
     public player_movement player;
 
-    //for game over
-    public int lives = 3;
-    public static event Action OnPlayerDied;
-
+    
+    public AudioSource hitAudio;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -36,24 +35,17 @@ public class playerHP : MonoBehaviour
 
     //updates hearts in the UI when taking damage, shows Game Over if you run out
         public void playerDamaged(int damage)
-    {
-        currentHealth -= damage;
-        healthUI.UpdateHearts(currentHealth);
-        StartCoroutine(hitFlash());
-        Debug.Log("player takes damage");
-        if(currentHealth == 0)
         {
-            
-            if(lives <= 0)
-            {
-                OnPlayerDied.Invoke();
-            }
-            else
-            {
+            hitAudio.pitch = UnityEngine.Random.Range(1f, 2f);
+            hitAudio.Play();
+            currentHealth -= damage;
+            healthUI.UpdateHearts(currentHealth);
+            StartCoroutine(hitFlash());
+            Debug.Log("player takes damage");
+            if(currentHealth == 0)
+        {
                 player.Death();
                 healthUI.UpdateHearts(currentHealth);
-                lives--;
-            }
         }
     }
 
@@ -64,7 +56,17 @@ public class playerHP : MonoBehaviour
         spriteRenderer.color = Color.clear;
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color = Color.white;
-    }    
+    }
+
+
+    public void healPlayer()
+    {
+        if (currentHealth < maxHP)
+        {
+            currentHealth++;
+            healthUI.UpdateHearts(currentHealth);
+        }
+    }
 
     // Update is called once per frame
     void Update()

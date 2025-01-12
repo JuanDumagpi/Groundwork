@@ -33,6 +33,7 @@ public class craftUpgrade : MonoBehaviour
                 Destroy(gameObject);
                 GameObject cloneTurret = Instantiate(turret, spawnPoint.position, spawnPoint.rotation);
                 resources.silverCount--;
+                resources.updateSilverAmt();
                 Debug.Log("Trying to make turret");
 
             }
@@ -50,11 +51,13 @@ public class craftUpgrade : MonoBehaviour
 
     public void upgradeWallLeft()
     {
-        if (CraftingScript.health >= CraftingScript.maxHealth)
+        if (CraftingScript.health >= CraftingScript.maxHealth && resources.silverCount >= 1)
         {
             if (invuln == false)
             {
                 Destroy(gameObject);
+                resources.silverCount--;
+                resources.updateSilverAmt();
                 GameObject cloneTurret = Instantiate(turret, spawnPoint.position, Quaternion.Euler(0,180,0));
                 Debug.Log("Trying to make turret");
 

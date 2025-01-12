@@ -21,6 +21,7 @@ public class wallSpawner : MonoBehaviour
             {
                 makeWall();
                 resources.copperCount--;
+                resources.updateCopperAmt();
             }
             else
             {

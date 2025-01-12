@@ -23,6 +23,14 @@ public class bulletScript : MonoBehaviour
             enemy.TakeDamage(damage);
             Destroy(gameObject);
         }
+
+        skellyScript skelly = collision.GetComponent<skellyScript>();
+        if (skelly != null)
+        {
+            Debug.Log("Hits");
+            skelly.TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 
     private void FixedUpdate()

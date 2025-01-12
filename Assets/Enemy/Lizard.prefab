@@ -305,7 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   bullet: {fileID: 9141081235184184392, guid: aa5ddd10c4383644388e7d05620d9849, type: 3}
-  attackSpeed: 2
+  attackSpeed: 1
   aimPoint: {fileID: 1957233519260552965}
   playerOffsetY: 1.25
   sight: {fileID: 3485146084520846361}

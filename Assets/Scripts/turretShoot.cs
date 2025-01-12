@@ -13,6 +13,8 @@ public class turretShoot : MonoBehaviour
     public int ammo = 15; //destroys gameobject if it runs out of ammo
     public float lifespan = 30; //destroys the game object if inactive for 30s
     public GameObject silver;
+
+    public AudioSource shot;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -44,6 +46,8 @@ public class turretShoot : MonoBehaviour
         Debug.DrawLine(aimPoint.position, endPoint.position);
         if (hit.collider != null)
         {
+            shot.pitch = UnityEngine.Random.Range(0.6f, 0.9f);
+            shot.Play();
             Debug.Log("enemy found!");
             Instantiate(bullet, aimPoint.position, aimPoint.rotation);
             lifespan = 30;

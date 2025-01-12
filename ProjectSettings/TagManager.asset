@@ -10,6 +10,7 @@ TagManager:
   - Copper
   - Silver
   - Item
+  - Heart
   layers:
   - Default
   - TransparentFX

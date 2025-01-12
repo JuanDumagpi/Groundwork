@@ -40,6 +40,10 @@ public class player_movement : MonoBehaviour
     public Vector2 checkPoint;
     playerHP health;
 
+
+    //this is for SFX
+    public AudioSource jumpAudio;
+    public AudioSource pickup;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -60,6 +64,8 @@ public class player_movement : MonoBehaviour
         //if pressing the jump key, lets you jump, holding it makes you jump higher
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
+            jumpAudio.pitch = UnityEngine.Random.Range(1.3f, 1.5f);
+            jumpAudio.Play();
             rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpPower);
             isGrounded = false; 
             animator.SetBool("isJumping", !isGrounded);
@@ -161,6 +167,7 @@ public class player_movement : MonoBehaviour
             {
                 Destroy(other.gameObject);
                 item.copperCount++;
+                item.updateCopperAmt();
                 StartCoroutine(itemCooldown());
             }
         }
@@ -171,15 +178,28 @@ public class player_movement : MonoBehaviour
             {
                 Destroy(other.gameObject);
                 item.silverCount++;
+                item.updateSilverAmt();
                 StartCoroutine(itemCooldown());
             }
         }
-        
+
+        if (other.gameObject.CompareTag("Heart"))
+        {
+            if (collectable == true)
+            {
+                Destroy(other.gameObject);
+                health.healPlayer();
+                StartCoroutine(itemCooldown());
+            }
+        }
+
     }
 
 
     IEnumerator itemCooldown()
     {
+        pickup.pitch = UnityEngine.Random.Range(0.8f, 1.2f);
+        pickup.Play();
         collectable = false;
         yield return new WaitForSeconds(itemCD);
         collectable = true;
